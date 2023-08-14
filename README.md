@@ -1,34 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI Skin Analysis Next.js App
+
+![Project Banner](project_banner.png)
+
+Welcome to the AI Skin Analysis Next.js app! This repository contains a practice build of an existing feature inspired by Perfectcorp.com. The main objective of this project is to create an AI-powered skin analysis tool using Next.js and face-api.js. The app takes input in the form of a still photo or video of the client's face and provides detailed observations about their skin condition along with personalized skincare recommendations.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [AI Algorithm](#ai-algorithm)
+- [Technologies Used](#technologies-used)
+
+## Introduction
+
+In a world increasingly influenced by technology, skin care is also benefiting from the power of artificial intelligence. This project aims to replicate the AI skin analysis feature from Perfectcorp.com using Next.js and face-api.js. By utilizing the face-api.js library, the application will be capable of identifying various skin conditions and providing tailored recommendations for an effective skincare routine.
+
+## Features
+
+- **AI Skin Analysis:** Upload a still photo or video of your face to receive a comprehensive skin analysis report. The AI algorithm powered by face-api.js will identify characteristics such as wrinkles, blemishes, uneven skin tone, and more.
+
+- **Personalized Recommendations:** Based on the analysis, the application will generate personalized skincare recommendations. These recommendations might include product suggestions, routine adjustments, and general tips for maintaining healthy skin.
+
+- **User-Friendly Interface:** The user interface is designed to be intuitive and easy to navigate, ensuring a seamless experience for users of all technical levels.
+
+- **Multi-Platform Support:** The application can be accessed from various devices including desktops, tablets, and smartphones, providing flexibility and convenience to users.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Before you begin, ensure you have the following:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js (12.0 or higher)
+- npm package manager
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository: `git clone https://github.com/fabiconcept/alpha-ai-feature.git`
+2. Navigate to the project directory: `cd alpha-ai-feature`
+3. Install dependencies: `npm install`
+4. Run the development server: `npm run dev`
 
-## Learn More
+## Usage
 
-To learn more about Next.js, take a look at the following resources:
+1. Open your web browser and navigate to the application's URL (usually `http://localhost:3000`).
+2. Upload a still photo or video of your face.
+3. Wait for the AI analysis to complete.
+4. View the detailed skin analysis report and personalized recommendations provided by the AI.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## AI Algorithm
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The AI skin analysis algorithm utilizes the powerful face-api.js library for face detection, recognition, and analysis. It employs a combination of computer vision techniques, deep learning, and image processing to identify patterns, textures, and characteristics related to various skin conditions.
 
-## Deploy on Vercel
+## Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Next.js: React framework for building user interfaces
+- face-api.js: JavaScript API for face detection and recognition
+- Tailwind: Styling and layout design
