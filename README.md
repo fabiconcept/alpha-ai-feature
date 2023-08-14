@@ -1,7 +1,5 @@
 # AI Skin Analysis Next.js App
 
-![Project Banner](project_banner.png)
-
 Welcome to the AI Skin Analysis Next.js app! This repository contains a practice build of an existing feature inspired by Perfectcorp.com. The main objective of this project is to create an AI-powered skin analysis tool using Next.js and face-api.js. The app takes input in the form of a still photo or video of the client's face and provides detailed observations about their skin condition along with personalized skincare recommendations.
 
 ## Table of Contents
