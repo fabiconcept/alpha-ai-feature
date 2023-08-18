@@ -8,7 +8,8 @@ export default function Home() {
                 <div className="font-semibold text-lg uppercase">Alpha AI</div>
             </div>
 
-            <div className="flex flex-col gap-4 sm:items-start items-center justify-center sm:p-12 p-6 sm:text-left text-center">
+            <div className="relative flex flex-col gap-4 sm:items-start items-center justify-center sm:p-12 p-6 sm:text-left text-center">
+                <div className="font-semibold text-lg uppercase md:top-12 top-10 md:left-12 left-8 absolute text-themeGreen md:hidden">Alpha AI</div>
                 <div className="rounded-md bg-themeGreen bg-opacity-5 p-2 w-fit select-none">
                     <Image 
                         src={"https://interview.sirv.com/random/artificial-intelligence.png"} 
