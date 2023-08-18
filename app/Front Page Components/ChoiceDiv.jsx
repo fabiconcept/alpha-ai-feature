@@ -1,13 +1,14 @@
 "use client"
 import Image from "next/image";
 import React, { useState } from "react";
-import InstructionsModal from "./InstructionsModal";
+import Modal from "./Modal";
 
 export const ChoiceContext = React.createContext();
 
 export default function ChoiceDiv() {
     const [diagnosticType, setDiagnosticType] = useState(0);
     const [modalOpen, setModalOpen] = useState(false);
+    const [selfieModalOpen, setSelfieModalOpen] = useState(false);
 
     const handleProceed = () => {
         if (diagnosticType === 0) {
@@ -17,7 +18,7 @@ export default function ChoiceDiv() {
     }
 
     return (
-        <ChoiceContext.Provider value={{ diagnosticType, setModalOpen, modalOpen }}>
+        <ChoiceContext.Provider value={{ diagnosticType, setModalOpen, modalOpen, selfieModalOpen, setSelfieModalOpen }}>
             <div className="grid sm:place-items-start place-items-center gap-3 w-fit text-left shadow-[0_30px_50px_rgb(0,0,0,0.075)] -m-2 p-2 rounded-lg">
                 <div onClick={() => setDiagnosticType(1)} className={`sm:p-5 p-3 border-2 rounded-lg border-themeGreen group sm:w-[30rem] w-[20rem] cursor-pointer flex items-center justify-between ${diagnosticType === 1 ? "scale-95 bg-themeGreen bg-opacity-5" : "hover:scale-[1.025] active:scale-95 hover:bg-themeGreen hover:bg-opacity-5"} select-none`}>
                     <div className="flex items-center gap-3">
@@ -60,7 +61,7 @@ export default function ChoiceDiv() {
                 <div className="rounded-md bg-themeGreen px-6 py-3 my-5 sm:w-fit w-full text-center text-white cursor-pointer hover:scale-[1.025] active:scale-90 select-none" onClick={handleProceed}>
                     Proceed
                 </div>
-                <InstructionsModal />
+                <Modal />
             </div>
         </ChoiceContext.Provider>
     );
