@@ -7,6 +7,18 @@
   transition: all .15s ease-in-out;
 }
 
+.webCam::after {
+  position: absolute;
+  z-index: 1000;
+  color: #fff;
+  content: "Powered by: Alpha AI";
+  width: 200vw;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
 .coverHandle:has(.closeModal) {
   opacity: 0;
   pointer-events: none;
